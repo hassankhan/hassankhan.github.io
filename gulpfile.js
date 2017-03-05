@@ -100,7 +100,7 @@ gulp.task('minify:html', ['default', 'inject'], () => {
 });
 
 // Watch files for changes
-gulp.task('watch', ['default'], () => {
+gulp.task('watch', ['build'], () => {
     gulp.watch('./src/*.html', ['inject', 'minify:html']);
     gulp.watch('./src/js/*.js', ['inject', 'minify:html']);
     gulp.watch('./src/sass/*.scss', ['inject', 'minify:html']);
