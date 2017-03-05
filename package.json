@@ -1,0 +1,40 @@
+{
+  "name": "hassankhan.me",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hassankhan/hassankhan.github.io.git"
+  },
+  "keywords": [
+    "website",
+    "personal"
+  ],
+  "author": "Hassan Khan <contact@hassankhan.me> (http://hassankhan.me/)",
+  "license": "MIT",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/hassankhan/hassankhan.github.io/issues"
+  },
+  "homepage": "https://github.com/hassankhan/hassankhan.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmllint": "0.0.11",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-inject": "^4.1.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-stylelint": "^3.9.0",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.3",
+    "stylelint-config-standard": "^16.0.0"
+  }
+}

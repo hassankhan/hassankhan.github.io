@@ -1,0 +1,15 @@
+.DS_Store
+*.iml
+*.log*
+*.sublime-project
+.sass-cache
+npm-debug.log
+
+.idea/
+node_modules/
+build/
+coverage/
+.eslintcache
+
+.env
+dist

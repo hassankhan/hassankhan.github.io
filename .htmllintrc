@@ -1,0 +1,7 @@
+{
+  "attr-name-style": false,
+  "id-class-style": "dash",
+  "indent-style": "spaces",
+  "indent-width": 2,
+  "tag-bans": ["style", "b"]
+}
