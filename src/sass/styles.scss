@@ -15,6 +15,16 @@ body {
   justify-content: center;
 }
 
+main {
+  font-size: 1rem;
+
+  @media screen and (max-width: $break-small) {
+    main {
+      font-size: 1.2rem;
+    }
+  }
+}
+
 .name {
   font-family: $secondary-font;
   font-weight: 700;
@@ -48,15 +58,14 @@ a {
   li {
     display: inline;
     margin-left: 0.625em;
+    padding: 0 1em;
+    font-size: 1.3em;
 
     &:first-child {
       margin-left: 0;
     }
-  }
-}
 
-@media screen and (max-width: $break-small) {
-  main {
-    font-size: 1.2rem;
+    // @media screen and (max-width: $break-small) {
+    // }
   }
 }
