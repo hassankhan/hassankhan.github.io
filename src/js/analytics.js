@@ -10,5 +10,5 @@
     firstScript.parentNode.insertBefore(scriptElement, firstScript);
 }(window, document, 'ga'));
 
-ga('create', 'UA-XXXX-Y');
+ga('create', ' UA-32000161-1');
 ga('send', 'pageview');
