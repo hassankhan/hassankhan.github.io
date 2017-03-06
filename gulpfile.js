@@ -7,12 +7,25 @@ const cleanCss   = require('gulp-clean-css');
 const concat     = require('gulp-concat');
 const htmllint   = require('gulp-htmllint');
 const htmlmin    = require('gulp-htmlmin');
+const imagemin   = require('gulp-imagemin');
 const inject     = require('gulp-inject');
 const jshint     = require('gulp-jshint');
 const rename     = require('gulp-rename');
 const sass       = require('gulp-sass');
 const stylelint  = require('gulp-stylelint');
 const uglify     = require('gulp-uglify');
+
+// Minify images
+gulp.task('minify:images', () => {
+  return gulp.src('./src/images/*.*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./dist/images'));
+});
+
+gulp.task('copy:images', ['minify:images'], () => {
+  return gulp.src('./dist/images/*.*')
+    .pipe(gulp.dest('./'));
+});
 
 // Lint JS
 gulp.task('lint:js', () => {
@@ -106,5 +119,5 @@ gulp.task('watch', ['build'], () => {
     gulp.watch('./src/sass/*.scss', ['inject', 'minify:html']);
 });
 
-gulp.task('default', ['lint:html', 'minify:css', 'minify:js']);
+gulp.task('default', ['lint:html', 'minify:css', 'minify:js', 'copy:images']);
 gulp.task('build', ['minify:html']);
