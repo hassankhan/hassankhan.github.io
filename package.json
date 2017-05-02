@@ -4,7 +4,7 @@
   "description": "Personal website",
   "main": "index.html",
   "scripts": {
-    "test": "gulp build"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
