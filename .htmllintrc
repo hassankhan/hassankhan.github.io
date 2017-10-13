@@ -1,6 +1,6 @@
 {
   "attr-name-style": false,
-  "id-class-style": "dash",
+  "id-class-style": "bem",
   "indent-style": "spaces",
   "indent-width": 2,
   "tag-bans": ["style", "b"]
