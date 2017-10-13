@@ -1,4 +1,6 @@
 @import "variables";
+@import "mixins";
+@import "animations";
 
 * {
   margin: 0;
@@ -35,12 +37,35 @@ main {
   text-align: center;
 }
 
-.tagline {
-  color: $secondary-color;
-  font-weight: normal;
-  font-size: 1em;
-  margin-bottom: 1.875em;
+.wrapper {
+  margin: 4em auto;
   text-align: center;
+
+  @include mediaQuery(M) {
+    margin: 5em auto;
+  }
+
+  @include mediaQuery(L) {
+    margin: 6em auto;
+  }
+}
+
+.profile {
+  font-size: 1rem;
+  line-height: 1.2;
+
+  &.slide {
+    display: flex;
+  }
+
+  @include mediaQuery(M) {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  @include mediaQuery(L) {
+    font-size: 1rem;
+  }
 }
 
 a {
@@ -64,8 +89,5 @@ a {
     &:first-child {
       margin-left: 0;
     }
-
-    // @media screen and (max-width: $break-small) {
-    // }
   }
 }
