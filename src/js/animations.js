@@ -1,19 +1,16 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //set animation timing
-  var animationDelay = 2500;
+  var animationDelay = 3000;
+  var profileEl = document.querySelector('.profile.slide');
+  var words = profileEl.querySelectorAll('.slide__items .slide__item');
 
-  animate(document.querySelector('.profile.slide'));
+  animate();
 
-  function animate(profileEl) {
+  function animate() {
 
-    var words = profileEl.querySelectorAll('.slide__items .slide__item');
     var width = 0;
 
-    // console.log('words', words);
-
     words.forEach(function(word) {
-      console.log('word', word);
-      console.log('word.offsetWidth', word.offsetWidth);
 
       var wordWidth = word.offsetWidth;
       if (word.offsetWidth > width) {
@@ -21,30 +18,30 @@ document.addEventListener("DOMContentLoaded", function (event) {
       }
     });
 
-    console.log('width', width);
-
     profileEl.querySelector('.slide__items')
       .setAttribute('style', 'width: ' + width + 'px');
 
     //trigger animation
     setTimeout(function() {
-      hideWord( profileEl.querySelectorAll('.is-visible')[0] );
+      hideWord(0);
     }, animationDelay);
   }
 
-  function hideWord($word) {
+  function hideWord($wordIndex) {
 
-    var nextWord = takeNext($word);
+    var $word = words[$wordIndex];
+    var nextWord = words[getNextIndex($wordIndex)];
+
     switchWord($word, nextWord);
     setTimeout(function() {
-      hideWord(nextWord);
+      hideWord(getNextIndex($wordIndex));
     }, animationDelay);
   }
 
-  function takeNext($word) {
-    return ($word.nextSibling !== null && $word.nextSibling.nodeType === 1)
-      ? $word.nextSibling
-      : $word.parentNode.querySelectorAll('.slide__item')[0];
+  function getNextIndex(currentIndex) {
+    return currentIndex + 1 >= words.length
+      ? 0
+      : currentIndex + 1;
   }
 
   function switchWord($oldWord, $newWord) {
