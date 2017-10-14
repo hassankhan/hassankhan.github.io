@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
       if (word.offsetWidth > width) {
         width = wordWidth;
       }
+
+      word.setAttribute('style', 'width: 100%;');
     });
 
     profileEl.querySelector('.slide__items')

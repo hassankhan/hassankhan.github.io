@@ -35,6 +35,10 @@ main {
   text-transform: lowercase;
   margin: 0.75rem 0;
   text-align: center;
+
+  @include mediaQuery(S) {
+    font-size: 3em;
+  }
 }
 
 .wrapper {
@@ -56,6 +60,12 @@ main {
 
   &.slide {
     display: flex;
+
+    @include mediaQuery(S) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 0 1em;
+    }
   }
 
   @include mediaQuery(M) {
@@ -65,6 +75,16 @@ main {
 
   @include mediaQuery(L) {
     font-size: 1rem;
+  }
+}
+
+.title.slide__items {
+  .slide__item {
+    text-align: right;
+
+    @include mediaQuery(S) {
+      text-align: center;
+    }
   }
 }
 
