@@ -42,20 +42,21 @@ main {
 }
 
 .wrapper {
-  margin: 4em auto;
+  margin: 6em auto;
   text-align: center;
+
+  @include mediaQuery(S) {
+    margin: 4em auto;
+  }
 
   @include mediaQuery(M) {
     margin: 5em auto;
-  }
-
-  @include mediaQuery(L) {
-    margin: 6em auto;
   }
 }
 
 .profile {
   font-size: 1rem;
+  font-weight: 300;
   line-height: 1.2;
 
   &.slide {
@@ -66,15 +67,12 @@ main {
       justify-content: space-evenly;
       padding: 0 1em;
     }
-  }
 
-  @include mediaQuery(M) {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-
-  @include mediaQuery(L) {
-    font-size: 1rem;
+    @include mediaQuery(M) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 0 2em;
+    }
   }
 }
 
@@ -83,6 +81,10 @@ main {
     text-align: right;
 
     @include mediaQuery(S) {
+      text-align: center;
+    }
+
+    @include mediaQuery(M) {
       text-align: center;
     }
   }
