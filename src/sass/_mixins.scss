@@ -4,14 +4,14 @@
  */
 @mixin mediaQuery($canvas) {
   @if $canvas == S {
-    @media only screen and (min-width: $break-small) { @content; }
+    @media only screen and (max-width: $break-small) { @content; }
   }
 
   @else if $canvas == M {
-    @media only screen and (min-width: $break-med) { @content; }
+    @media only screen and (max-width: $break-med) { @content; }
   }
 
   @else if $canvas == L {
-    @media only screen and (min-width: $break-large) { @content; }
+    @media only screen and (max-width: $break-large) { @content; }
   }
 }
