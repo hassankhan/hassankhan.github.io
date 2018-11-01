@@ -41,9 +41,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
   function getNextIndex(currentIndex) {
-    return currentIndex + 1 >= words.length
-      ? 0
-      : currentIndex + 1;
+    return currentIndex + 1 >= words.length ? 0 : currentIndex + 1;
   }
 
   function switchWord($oldWord, $newWord) {
