@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/skrawg
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://hassankhan.me
+  * I am skrawg (https://keybase.io/skrawg) on keybase.
+  * I have a public key ASAwKlillIFsrKZQYU3-gWZ8cDfF9R5FY5THLR0bfMtk1go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120302a58a594816caca650614dfe81667c7037c5f51e456394c72d1d1b7ccb64d60a",
+      "host": "keybase.io",
+      "kid": "0120302a58a594816caca650614dfe81667c7037c5f51e456394c72d1d1b7ccb64d60a",
+      "uid": "38154bc62b2daf3b0816f95dc25a5319",
+      "username": "skrawg"
+    },
+    "merkle_root": {
+      "ctime": 1543922407,
+      "hash": "d227bab7622b182611d37544349c16f38a6114599245906962df1fb84cd3934921e3d973a17cb3a5efb004509652b786eb734784a46740fc0a321ca490fd89d1",
+      "hash_meta": "df7b3db414a13f5b5a9fa497810a4183696455ecc86bed13265c9b8f28cc0b1b",
+      "seqno": 4049166
+    },
+    "service": {
+      "entropy": "rRE10UIIQbQC6lmtLx9wdaZk",
+      "hostname": "hassankhan.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.10.1"
+  },
+  "ctime": 1543922414,
+  "expire_in": 504576000,
+  "prev": "f7cf4095c22728d76de892d9f4abf558aed08c595326800cff21833a18064f7d",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgMCpYpZSBbKymUGFN/oFmfHA3xfUeRWOUxy0dG3zLZNYKp3BheWxvYWTESpcCEMQg989AlcInKNdt6JLZ9Kv1WK7QjFlTJoAM/yGDOhgGT33EIKVexHTFZn2Rno+fQwwe/3+EBwIF4cyJCKi7jz0jNrP8AgHCo3NpZ8RAzxQ0E4TNPLrbzQ6inScljxlQLitrKWjzAOagLQrFBQmlwVz2LK3AyyO8qAvc2bEsPwXIJCl7KYMjqXL4P1VhB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKO14YiNx7qrPgO3yejMbrs6H4V6uebVQd3crLtzo6cdo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/skrawg
+
+==================================================================
