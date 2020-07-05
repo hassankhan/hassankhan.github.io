@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/hassankhan/hassankhan.github.io#readme",
   "devDependencies": {
+    "@types/favicons": "^5.5.0",
     "gulp": "^4",
     "gulp-autoprefixer": "^7",
     "gulp-clean-css": "^4",
@@ -37,8 +38,13 @@
     "gulp-stylelint": "^3",
     "gulp-uglify": "^2",
     "jshint": "^2",
+    "parcel": "^2.0.0-beta.1",
     "stylelint": "^13",
-    "stylelint-config-standard": "^16"
+    "stylelint-config-standard": "^16",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "favicons": "^6.1.0"
+  }
 }
