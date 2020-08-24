@@ -16,14 +16,15 @@
     "website",
     "personal"
   ],
-  "author": "Hassan Khan <contact@hassankhan.me> (http://hassankhan.me/)",
+  "author": "Hassan Khan <contact@hassankhan.me> (https://hassankhan.me/)",
   "license": "MIT",
   "private": true,
   "bugs": {
     "url": "https://github.com/hassankhan/hassankhan.github.io/issues"
   },
-  "homepage": "https://github.com/hassankhan/hassankhan.github.io#readme",
-  "dependencies": {},
+  "homepage": "https://hassankhan.me",
+  "dependencies": {
+  },
   "devDependencies": {
     "@parcel/transformer-css": "^2.0.0-alpha.3",
     "@parcel/transformer-postcss": "^2.0.0-alpha.3",
