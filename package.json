@@ -5,6 +5,7 @@
   "main": "dist/index.html",
   "scripts": {
     "build": "parcel build src/index.html && cp -R src/.well-known dist/",
+    "lint:scss": "stylelint \"**/*.scss\"",
     "start": "parcel src/index.html"
   },
   "repository": {
@@ -34,6 +35,7 @@
     "sass": "^1",
     "stylelint": "^13",
     "stylelint-config-standard": "^19",
+    "stylelint-scss": "^3.18.0",
     "typescript": "^3"
   }
 }
