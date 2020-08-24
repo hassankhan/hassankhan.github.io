@@ -5,6 +5,7 @@
   "main": "dist/index.html",
   "scripts": {
     "build": "parcel build src/index.html && cp -R src/.well-known dist/",
+    "clean": "rimraf .parcel-cache/ dist/",
     "lint:scss": "stylelint \"**/*.scss\"",
     "start": "parcel src/index.html"
   },
@@ -23,20 +24,20 @@
     "url": "https://github.com/hassankhan/hassankhan.github.io/issues"
   },
   "homepage": "https://hassankhan.me",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@parcel/transformer-css": "^2.0.0-alpha.3",
     "@parcel/transformer-postcss": "^2.0.0-alpha.3",
     "parcel": "^2.0.0-beta.1",
     "postcss-custom-properties": "^9",
     "postcss-import": "^12",
-    "postcss-url": "^8.0.0",
+    "postcss-url": "^8",
     "posthtml-favicons": "^1",
+    "rimraf": "^3",
     "sass": "^1",
     "stylelint": "^13",
     "stylelint-config-standard": "^19",
-    "stylelint-scss": "^3.18.0",
+    "stylelint-scss": "^3",
     "typescript": "^3"
   }
 }
