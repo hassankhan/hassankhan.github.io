@@ -4,7 +4,7 @@
   "description": "Personal website",
   "main": "dist/index.html",
   "scripts": {
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html && cp -R src/.well-known dist/",
     "start": "parcel src/index.html"
   },
   "repository": {
