@@ -1,11 +1,11 @@
 {
   "name": "hassankhan.me",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Personal website",
-  "main": "index.html",
+  "main": "dist/index.html",
   "scripts": {
-    "build": "gulp build",
-    "start": "gulp watch"
+    "build": "parcel build src/index.html",
+    "start": "parcel src/index.html"
   },
   "repository": {
     "type": "git",
@@ -22,29 +22,18 @@
     "url": "https://github.com/hassankhan/hassankhan.github.io/issues"
   },
   "homepage": "https://github.com/hassankhan/hassankhan.github.io#readme",
+  "dependencies": {},
   "devDependencies": {
-    "@types/favicons": "^5.5.0",
-    "gulp": "^4",
-    "gulp-autoprefixer": "^7",
-    "gulp-clean-css": "^4",
-    "gulp-concat": "^2",
-    "gulp-htmllint": "^0.0.16",
-    "gulp-htmlmin": "^5",
-    "gulp-imagemin": "^7",
-    "gulp-inject": "^5",
-    "gulp-jshint": "^2",
-    "gulp-rename": "^2",
-    "gulp-sass": "^4",
-    "gulp-stylelint": "^3",
-    "gulp-uglify": "^2",
-    "jshint": "^2",
+    "@parcel/transformer-css": "^2.0.0-alpha.3",
+    "@parcel/transformer-postcss": "^2.0.0-alpha.3",
     "parcel": "^2.0.0-beta.1",
+    "postcss-custom-properties": "^9",
+    "postcss-import": "^12",
+    "postcss-url": "^8.0.0",
+    "posthtml-favicons": "^1",
+    "sass": "^1",
     "stylelint": "^13",
-    "stylelint-config-standard": "^16",
-    "ts-node": "^8.10.2",
-    "typescript": "^3.9.6"
-  },
-  "dependencies": {
-    "favicons": "^6.1.0"
+    "stylelint-config-standard": "^19",
+    "typescript": "^3"
   }
 }
