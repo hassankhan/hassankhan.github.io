@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   //set animation timing
   var animationDelay = 3000;
   var profileEl = document.querySelector('.profile.slide');
-  var words = profileEl.querySelectorAll('.slide__list .slide__item');
+  var words = profileEl.querySelectorAll('.slide__items .slide__item');
 
   animate();
 
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       word.setAttribute('style', 'width: 100%;');
     });
 
-    profileEl.querySelector('.slide__list')
+    profileEl.querySelector('.slide__items')
       .setAttribute('style', 'width: ' + width + 'px');
 
     //trigger animation
