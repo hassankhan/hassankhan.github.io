@@ -16,6 +16,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $bg-color-dark;
+    color: $color-white;
+  }
 }
 
 main {
@@ -79,12 +84,22 @@ main {
   }
 }
 
+.company {
+  font-weight: bold;
+}
+
 a {
   color: $link-color;
+  text-decoration: none;
   transition: color 0.2s ease;
 
+  &:visited {
+    color: $link-color;
+  }
+
+  &:focus,
   &:hover {
-    color: $primary-color;
+    color: $link-hover-color;
   }
 }
 

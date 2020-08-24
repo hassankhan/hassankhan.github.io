@@ -1,8 +1,25 @@
 $header-font : 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
 $text-font   : 'Hiragino Sans GB', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 
-$primary-color : #000;
-$link-color    : #999;
+$color-white : #fff;
+$color-black : #000;
+
+$theme-color-1 : #1a1717;
+$theme-color-2 : #166ea8;
+$theme-color-3 : #44b3fc;
+$theme-color-4 : #bbe1fa;
+
+$color-dark  : $theme-color-1;
+$color-light : $theme-color-4;
+
+$bg-color-dark  : $color-dark;
+$bg-color-light : $color-white;
+
+$link-color       : $theme-color-2;
+$link-hover-color : $theme-color-3;
+
+$text-color-light : $color-dark;
+$text-color-dark  : $color-white;
 
 $break-small : 375px;
 $break-med   : 768px;
