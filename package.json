@@ -8,7 +8,8 @@
     "clean": "rimraf .parcel-cache/ dist/",
     "lint:scss": "stylelint \"**/*.scss\"",
     "lint:html": "htmllint src/index.html",
-    "lint": "yarn lint:scss && yarn lint:html",
+    "lint:js": "eslint src/**/*.ts",
+    "lint": "yarn lint:scss && yarn lint:html && yarn lint:js",
     "start": "parcel src/index.html"
   },
   "repository": {
@@ -31,6 +32,9 @@
     "@fortawesome/fontawesome-free": "^5",
     "@parcel/transformer-css": "^2.0.0-alpha.3",
     "@parcel/transformer-postcss": "^2.0.0-alpha.3",
+    "@typescript-eslint/eslint-plugin": "^4",
+    "@typescript-eslint/parser": "^4",
+    "eslint": "^7",
     "htmllint-cli": "^0.0.7",
     "parcel": "^2.0.0-nightly.430",
     "postcss": "^8",
@@ -43,6 +47,6 @@
     "stylelint": "^13",
     "stylelint-config-standard": "^19",
     "stylelint-scss": "^3",
-    "typescript": "^3"
+    "typescript": "^4"
   }
 }
