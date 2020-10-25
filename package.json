@@ -24,8 +24,7 @@
     "url": "https://github.com/hassankhan/hassankhan.github.io/issues"
   },
   "homepage": "https://hassankhan.me",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5",
     "@parcel/transformer-css": "^2.0.0-alpha.3",
