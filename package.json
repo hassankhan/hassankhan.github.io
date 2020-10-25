@@ -35,6 +35,8 @@
     "@typescript-eslint/eslint-plugin": "^4",
     "@typescript-eslint/parser": "^4",
     "eslint": "^7",
+    "fontsource-montserrat": "^3",
+    "fontsource-open-sans": "^3",
     "htmllint-cli": "^0.0.7",
     "parcel": "^2.0.0-nightly.430",
     "postcss": "^8",
