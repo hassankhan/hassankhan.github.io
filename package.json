@@ -28,7 +28,7 @@
   "devDependencies": {
     "@parcel/transformer-css": "^2.0.0-alpha.3",
     "@parcel/transformer-postcss": "^2.0.0-alpha.3",
-    "parcel": "^2.0.0-beta.1",
+    "parcel": "^2.0.0-nightly.430",
     "postcss-custom-properties": "^9",
     "postcss-import": "^12",
     "postcss-url": "^8",
