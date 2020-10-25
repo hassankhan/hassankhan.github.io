@@ -1,3 +1,18 @@
+.slide__item {
+  opacity: 0;
+  top: 0.2em;
+
+  &.is-visible {
+    top: 0;
+    opacity: 1;
+    animation: slide-in 0.6s;
+  }
+
+  &.is-hidden {
+    animation: slide-out 0.6s;
+  }
+}
+
 .slide__items {
   display: inline-block;
   position: relative;
@@ -32,21 +47,6 @@
   .slide__items {
     overflow: hidden;
     vertical-align: top;
-  }
-
-  .slide__item {
-    opacity: 0;
-    top: 0.2em;
-
-    &.is-visible {
-      top: 0;
-      opacity: 1;
-      animation: slide-in 0.6s;
-    }
-
-    &.is-hidden {
-      animation: slide-out 0.6s;
-    }
   }
 }
 
