@@ -4,7 +4,7 @@
   "description": "Personal website",
   "main": "dist/index.html",
   "scripts": {
-    "build": "parcel build src/index.html && cp -R src/.well-known dist/",
+    "build": "parcel build src/index.html && cp -R public/ dist/",
     "clean": "rimraf .parcel-cache/ dist/",
     "lint:scss": "stylelint \"**/*.scss\"",
     "start": "parcel src/index.html"
