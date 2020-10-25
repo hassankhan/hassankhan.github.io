@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     throw new Error(`Element with class ${PROFILE_CLASS} not found`);
   }
 
-  const slideEl = profileEl!.querySelector(SLIDE_CLASS);
+  const slideEl = profileEl.querySelector(SLIDE_CLASS);
   if (!slideEl) {
     throw new Error(`Element with class ${SLIDE_CLASS} not found`);
   }
