@@ -16,6 +16,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: $bg-color-light;
+  color: $color-black;
 
   @media (prefers-color-scheme: dark) {
     background-color: $bg-color-dark;
@@ -89,7 +91,7 @@ main {
 }
 
 a {
-  color: $link-color;
+  color: $text-color-light;
   text-decoration: none;
   transition: color 0.2s ease;
 
@@ -100,6 +102,10 @@ a {
   &:focus,
   &:hover {
     color: $link-hover-color;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: $text-color-dark;
   }
 }
 
@@ -114,6 +120,32 @@ a {
 
     &:first-child {
       margin-left: 0;
+    }
+  }
+
+  svg {
+    width: 1em;
+  }
+
+  a[title="Twitter"] {
+    svg {
+      fill: #1da1f2;
+    }
+  }
+
+  a[title="GitHub"] {
+    svg {
+      fill: $color-black;
+
+      @media (prefers-color-scheme: dark) {
+        fill: $color-white;
+      }
+    }
+  }
+
+  a[title="LinkedIn"] {
+    svg {
+      fill: #2867b2;
     }
   }
 }

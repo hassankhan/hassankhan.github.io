@@ -15,8 +15,6 @@
   <!-- Only include one large favicon, the rest is taken care of -->
   <link rel="icon" href="src/images/favicon.png" type="image/x-icon">
 
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
-
   <link href="./sass/styles.scss" rel="stylesheet"/>
 
 </head>
@@ -44,10 +42,29 @@
   </section>
 
   <ul class="links">
-    <li><a href="http://twitter.com/_hassankhan" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-    <li><a href="http://github.com/hassankhan" title="GitHub"><i class="fa fa-github"></i></a></li>
-    <li><a href="https://uk.linkedin.com/in/iamhassankhan" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+    <li>
+      <a href="http://twitter.com/_hassankhan" title="Twitter">
+        <svg class="links__twitter">
+          <use xlink:href="../node_modules/@fortawesome/fontawesome-free/sprites/brands.svg#twitter"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="http://github.com/hassankhan" title="GitHub">
+        <svg>
+          <use xlink:href="../node_modules/@fortawesome/fontawesome-free/sprites/brands.svg#github"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://uk.linkedin.com/in/iamhassankhan" title="LinkedIn">
+        <svg>
+          <use xlink:href="../node_modules/@fortawesome/fontawesome-free/sprites/brands.svg#linkedin"></use>
+        </svg>
+      </a>
+    </li>
   </ul>
+
 </main>
 <script src="./js/animations.ts"></script>
 </body>
