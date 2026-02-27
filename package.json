@@ -24,7 +24,7 @@
   "homepage": "https://github.com/hassankhan/hassankhan.github.io#readme",
   "devDependencies": {
     "gulp": "^4",
-    "gulp-autoprefixer": "^7",
+    "gulp-autoprefixer": "^8",
     "gulp-clean-css": "^4",
     "gulp-concat": "^2",
     "gulp-htmllint": "^0.0.16",
@@ -33,12 +33,13 @@
     "gulp-inject": "^5",
     "gulp-jshint": "^2",
     "gulp-rename": "^2",
-    "gulp-sass": "^4",
-    "gulp-stylelint": "^3",
+    "gulp-sass": "^5",
+    "gulp-stylelint": "^13",
     "gulp-uglify": "^2",
     "jshint": "^2",
+    "sass": "^1",
     "stylelint": "^13",
-    "stylelint-config-standard": "^16"
+    "stylelint-config-standard": "^20"
   },
   "dependencies": {}
 }

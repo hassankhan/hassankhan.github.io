@@ -11,7 +11,7 @@ const imagemin   = require('gulp-imagemin');
 const inject     = require('gulp-inject');
 const jshint     = require('gulp-jshint');
 const rename     = require('gulp-rename');
-const sass       = require('gulp-sass');
+const sass       = require('gulp-sass')(require('sass'));
 const stylelint  = require('gulp-stylelint');
 const uglify     = require('gulp-uglify');
 
@@ -62,7 +62,7 @@ gulp.task('compile:sass', gulp.series('lint:sass', () => {
     return gulp.src('./src/sass/*.scss')
         .pipe(sass())
         .pipe(autoprefix({
-            browsers: ['last 2 versions'],
+            overrideBrowserslist: ['last 2 versions'],
             cascade: false
         }))
         .pipe(gulp.dest('./dist/css'));
@@ -113,7 +113,7 @@ gulp.task('minify:html', gulp.series('inject', () => {
 }));
 
 gulp.task('default', gulp.parallel('lint:html', 'minify:css', 'minify:js', 'copy:images'));
-gulp.task('build', gulp.series('minify:html'));
+gulp.task('build', gulp.series('default', 'minify:html'));
 
 // Watch files for changes
 gulp.task('watch', gulp.series('build', () => {
